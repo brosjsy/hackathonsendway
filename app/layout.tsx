@@ -10,8 +10,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Sendways - Communication Made Easy',
-  description: 'Streamlined messaging and communication platform for teams and businesses',
+  title: 'Sendways & Co - Peer-to-Peer Delivery Network',
+  description: 'Send anything, anywhere, with someone already going. Peer-to-peer package delivery service',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'dark',
+  colorScheme: 'light',
   themeColor: [
-    { media: '(prefers-color-scheme: dark)', color: '#0D1B2A' },
+    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
   ],
 }
 
@@ -45,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} bg-background dark`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
